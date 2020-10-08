@@ -41,6 +41,8 @@ app.post('/api/email', async (req,res)=>{
     await transport.sendMail(message, (err,info)=>{
         if(err){
             console.log(err)
+            return res.send({success:false})
+
         }
         else{
             console.log("Message sent" + info);
@@ -48,7 +50,7 @@ app.post('/api/email', async (req,res)=>{
         
     })
     console.log("Sent")
-    return res.send("Email Sent!")
+    return res.send({success:true})
     
 })
 app.listen(Port,err=>{

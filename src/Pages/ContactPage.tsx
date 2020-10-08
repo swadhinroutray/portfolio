@@ -36,7 +36,7 @@ export class ContactPage extends Component<ContactPageProps, any> {
       emailSent: false,
     });
     try {
-      const result = await Axios.post("http://localhost:5000/api/email", this.state);
+      const result = await Axios.post("http://localhost:1337/api/email", this.state);
       console.log(result)
       if (result.data.success) {
         this.setState({
