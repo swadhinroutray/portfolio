@@ -1,0 +1,22 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Mailing API for my portfolio",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "author": "Swadhin Routray",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.2.6",
+    "aws-sdk": "^2.770.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "nodemailer": "^6.4.13",
+    "nodemailer-ses-transport": "^1.5.1",
+    "path": "^0.12.7"
+  }
+}
