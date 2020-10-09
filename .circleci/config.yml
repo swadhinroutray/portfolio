@@ -1,7 +1,7 @@
 version: 2.1
 
 jobs:
-    test:
+    start:
         docker:
             - image: circleci/node:latest
 
@@ -15,8 +15,8 @@ jobs:
                   - ~/.cache
                 key: v1-dependencies-{{ checksum "package.json" }}
             - run: echo "Running Test Job"
-            - run: npm run-script test
+            - run: npm start
 workflows:
     test_build:
         jobs:
-            - test
+            - start

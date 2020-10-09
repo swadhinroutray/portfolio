@@ -31,7 +31,7 @@ app.get('/api',(req,res)=>{
 })
 
 app.post('/api/email', async (req,res)=>{
-    console.log(req.body)
+    // console.log(req.body)
     const message ={
         from: 'swadhin.routray@gmail.com',
         to: 'swadhin.routray@gmail.com',
@@ -49,7 +49,7 @@ app.post('/api/email', async (req,res)=>{
         }
         
     })
-    console.log("Sent")
+    console.log("Sent from: ", req.body.name )
     return res.send({success:true})
     
 })
