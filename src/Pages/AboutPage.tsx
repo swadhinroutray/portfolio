@@ -63,7 +63,7 @@ const AboutPage: React.FC<AboutPageProps> = ({
           </Row>
           {/* <hr /> */}
           <Row className="justify-content-center text-center py-2">
-            <h3 className="display-4 projects-header font-weight-medium py-3">
+            <h3 className="display-4 projects-header font-weight-medium py-2">
               Internships & Resume
             </h3>
           </Row>
