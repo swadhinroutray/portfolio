@@ -12,12 +12,7 @@ const app = express();
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(cors())
-aws.config.update({
-    apiVersion:'2010-12-01',
-    accessKeyId: process.env.ACCESS_KEY,
-    secretAccessKey:process.env.SECRET_ACESS_KEY,
-    region: 'us-west-2'
-});
+aws.config.loadFromPath('./awsconfig.json')
 const transport = nodemailer.createTransport(ses({
    host: 'email-smtp.ap-south-1.amazonaws.com',
    port: 2525,
@@ -36,7 +31,7 @@ app.post('/api/email', async (req,res)=>{
         from: 'swadhin.routray@gmail.com',
         to: 'swadhin.routray@gmail.com',
         subject: "Portfolio Message from: "+ req.body.name,
-        text: req.body.message + '\n From: '+ req.body.mail
+        text: req.body.message + '\n From: '+ req.body.email
     };
     await transport.sendMail(message, (err,info)=>{
         if(err){
@@ -46,11 +41,10 @@ app.post('/api/email', async (req,res)=>{
         }
         else{
             console.log("Message sent" + info);
+            return res.send({success:true});
         }
-        
+
     })
-    console.log("Sent from: ", req.body.name )
-    return res.send({success:true})
     
 })
 app.listen(Port,err=>{
