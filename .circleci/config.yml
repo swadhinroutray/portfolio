@@ -1,7 +1,7 @@
 version: 2.1
 
 jobs:
-    text:
+    test:
         docker:
             - image: circleci/nodenode:12.18.3
 
@@ -13,5 +13,7 @@ jobs:
                     - node_modules
             - run: echo "Running Test Job"
             - run: npm run-script test
-    
-
+workflows:
+    test_build:
+        jobs:
+            - test
