@@ -9,7 +9,7 @@ export class NavbarComponent extends Component {
       <Navbar className="border-bottom" bg="transparent" expand="lg">
         <Link  to="/">
         <Navbar.Brand className ="font-weight-bold">
-          Swadhin Routray
+          Swadhin Routray &copy;
         </Navbar.Brand>
         </Link>
         <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
