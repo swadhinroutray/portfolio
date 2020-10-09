@@ -1,11 +1,11 @@
 version: 2.1
-jobs:
+ jobs:
   build:
     docker:
       - image: circleci/node:12.18.3
   
     working_directory: ~/repo
-steps:
+ steps:
       - checkout
       
       - restore_cache:
