@@ -42,6 +42,9 @@ export class ContactPage extends Component<ContactPageProps, any> {
         this.setState({
           disabled: false,
           emailSent: true,
+          name: "",
+          email: "",
+          message: "",
         });
       } else {
         this.setState({
