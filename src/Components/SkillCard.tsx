@@ -25,7 +25,7 @@ import {
         // primaryColor={['','']}
         strokeWidth={5}
         styles={buildStyles({
-           textSize:'16px',
+           textSize:'17px',
            pathColor:  `${props.item.pathColor}`
           })}
 

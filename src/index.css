@@ -138,10 +138,9 @@ a:hover {
   width: 280px;
   height: auto;
   border-radius: 10px;
-  margin-top: 5px;
   /* padding: auto; */
   /* box-shadow: 0px 0px 3px 1px #ccc; */
-  margin:1.25vh;
+  margin:0.5vh;
 }
 .skill-card-image {
   border-radius: 10px;
@@ -161,8 +160,8 @@ a:hover {
   /* border-radius: 500px; */
 }
 .circular-progress{
-  height:150px;
-  margin-bottom: 8px;
+  height:130px;
+  margin-bottom: 6px;
 }
 .skillset-wrapper{
   /* width:90vw; */
