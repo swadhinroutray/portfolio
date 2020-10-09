@@ -148,15 +148,8 @@ a:hover {
   justify-content: center;
   align-self: center;
 }
-@media only screen and (max-width:600px) {
-  .bio-wrapper {
-    margin: 1vh 6vh;
-  }
-  .tech-wrapper{
-    margin: 1vh 6vh;
-  
-  }
-}
+
+
 
 
 .arrow{
@@ -196,7 +189,7 @@ a:hover {
 }
 
 .form-wrapper{
-  width:50vw;
+  width:40vw;
   margin : auto;
 }
 
@@ -207,4 +200,42 @@ a:hover {
 .err-msg{
   color:#EE6351;
   padding:10px 15px;
+}
+
+.input-text{
+    width: 25vw !important;
+    margin:auto;
+}
+
+.form-info{
+  font-size:38px;
+  font-weight: lighter;
+  margin-top:10px;
+}
+.contact-header{
+  font-size: 60px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width:600px) {
+  .bio-wrapper {
+    margin: 1vh 6vh;
+  }
+  .tech-wrapper{
+    margin: 1vh 6vh;
+  
+  }
+  .form-wrapper{
+    width:80vw;
+    margin : auto;
+  }
+  
+  .input-text{
+    width: 300px !important;
+    margin:auto;
+
+}
+.contact-header{
+  font-size: 40px;
+}
 }

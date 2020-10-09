@@ -28,7 +28,7 @@
     "typescript": "^3.7.5"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "set PORT=3001 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -50,5 +50,6 @@
   },
   "devDependencies": {
     "@types/react-router-dom": "^5.1.6"
-  }
+  },
+  "proxy":"http://localhost:5000"
 }

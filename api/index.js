@@ -6,7 +6,7 @@ const nodemailer = require('nodemailer');
 const ses  =require('nodemailer-ses-transport');
 const aws = require('aws-sdk');
 const cors =require("cors")
-const Port =process.env.PORT || 5000
+const Port = 5000
 
 const app = express();
 app.use(express.json())
@@ -33,10 +33,10 @@ app.get('/api',(req,res)=>{
 app.post('/api/email', async (req,res)=>{
     console.log(req.body)
     const message ={
-        from: req.body.email,
+        from: 'swadhin.routray@gmail.com',
         to: 'swadhin.routray@gmail.com',
-        subject: "Portfolio",
-        text: req.body.message
+        subject: "Portfolio Message from: "+ req.body.name,
+        text: req.body.message + '\n From: '+ req.body.mail
     };
     await transport.sendMail(message, (err,info)=>{
         if(err){
