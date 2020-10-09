@@ -71,7 +71,7 @@ const AboutPage: React.FC<AboutPageProps> = ({
             <Col className="text-center ">
               <a className="px-2" href="mailto:swadhin.routray@gmail.com">
                 {" "}
-                <FontAwesomeIcon className="" icon={faEnvelope} size="6x" />
+                <FontAwesomeIcon className="" icon={faEnvelope} size="5x" />
               </a>
               <h3 className="lead text-center py-2">Email Address</h3>
             </Col>
@@ -81,7 +81,7 @@ const AboutPage: React.FC<AboutPageProps> = ({
                 href="https://drive.google.com/file/d/1kJTTTTAORMynCPuMxqZdX2-qsRtA7pWf/view"
               >
                 {" "}
-                <FontAwesomeIcon className="" icon={faFilePdf} size="6x" />
+                <FontAwesomeIcon className="" icon={faFilePdf} size="5x" />
               </a>
               <h3 className="lead font-weight-light py-2">Resume</h3>
             </Col>
@@ -94,7 +94,7 @@ const AboutPage: React.FC<AboutPageProps> = ({
                 <FontAwesomeIcon
                   className=""
                   icon={faEnvelopeOpenText}
-                  size="6x"
+                  size="5x"
                 />
               </a>
               <h3 className="lead py-2">
@@ -110,7 +110,7 @@ const AboutPage: React.FC<AboutPageProps> = ({
                 <FontAwesomeIcon
                   className=""
                   icon={faEnvelopeOpenText}
-                  size="6x"
+                  size="5x"
                 />
               </a>
               <h3 className="lead py-2">Valency Networks Internship Letter</h3>
