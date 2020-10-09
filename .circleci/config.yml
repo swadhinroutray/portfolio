@@ -3,7 +3,7 @@ version: 2.1
 jobs:
     test:
         docker:
-            - image: circleci/nodenode:12.18.3
+            - image: circleci/node:latest
 
         steps:
             - checkout 
