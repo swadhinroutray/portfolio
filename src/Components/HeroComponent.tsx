@@ -28,7 +28,7 @@ function HeroComponent(props: any) {
         <br/>
         <Row className="justify-content-center text-center">
           <Col md={7} sm={12}>
-            <h3 className="display-4 justify-content-center font-weight-bold">
+            <h3 className="display-4 projects-header justify-content-center font-weight-bold">
               <span>My Socials</span>
             </h3>
           </Col>
