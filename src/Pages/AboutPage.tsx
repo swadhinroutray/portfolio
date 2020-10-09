@@ -50,7 +50,7 @@ const AboutPage: React.FC<AboutPageProps> = ({
           <Row className="justify-content-center  text-center py-2">
             {tech && (
               <div>
-                <h4 className="display-4 projects-header font-weight-medium py-3">
+                <h4 className="display-4 projects-header font-weight-medium py-1">
                   Tech & Research Interests
                 </h4>
                 <p className=" tech-wrapper font-weight-normal p-6">{tech}</p>
