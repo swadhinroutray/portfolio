@@ -33,7 +33,7 @@ const AboutPage: React.FC<AboutPageProps> = ({
           <Row className="justify-content-center text-center">
             <Col md={7} sm={12}>
               {title && (
-                <h1 className="display-3 projects-header font-weight-normal py-3">
+                <h1 className="display-4 projects-header font-weight-normal py-3">
                   {title}
                 </h1>
               )}
@@ -50,7 +50,7 @@ const AboutPage: React.FC<AboutPageProps> = ({
           <Row className="justify-content-center  text-center py-2">
             {tech && (
               <div>
-                <h4 className="display-4 projects-header font-weight-medium py-3">
+                <h4 className="display-5 projects-header font-weight-medium py-3">
                   Tech & Research Interests
                 </h4>
                 <p className=" tech-wrapper font-weight-normal p-6">{tech}</p>
@@ -63,7 +63,7 @@ const AboutPage: React.FC<AboutPageProps> = ({
           </Row>
           {/* <hr /> */}
           <Row className="justify-content-center text-center py-2">
-            <h3 className="display-4 projects-header font-weight-medium py-3">
+            <h3 className="display-5 projects-header font-weight-medium py-3">
               Internships & Resume
             </h3>
           </Row>
@@ -117,11 +117,8 @@ const AboutPage: React.FC<AboutPageProps> = ({
             </Col>
           </Row>
           <hr />
-          <Row className="justify-content-center text-center py-2">
-            <h3 className="display-4 projects-header font-weight-medium py-3"></h3>
-          </Row>
           <Row className="justify-content-center text-center py-1">
-          <h3 className="display-3 projects-header font-weight-medium py-3">
+          <h3 className="display-4 projects-header font-weight-medium py-3">
               My Tech Skill Set
             </h3>
             <SkillSetComponent />
