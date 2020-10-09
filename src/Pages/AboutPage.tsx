@@ -50,11 +50,10 @@ const AboutPage: React.FC<AboutPageProps> = ({
           <Row className="justify-content-center  text-center py-2">
             {tech && (
               <div>
-                <h4 className="display-4 projects-header font-weight-medium py-1">
+                <h4 className="display-4 projects-header font-weight-medium">
                   Tech & Research Interests
                 </h4>
                 <p className=" tech-wrapper font-weight-normal p-6">{tech}</p>
-                <br />
                 <p className=" tech-wrapper font-weight-normal p-6">
                   {research}
                 </p>
@@ -63,7 +62,7 @@ const AboutPage: React.FC<AboutPageProps> = ({
           </Row>
           {/* <hr /> */}
           <Row className="justify-content-center text-center py-2">
-            <h3 className="display-4 projects-header font-weight-medium py-2">
+            <h3 className="display-4 projects-header font-weight-medium ">
               Internships & Resume
             </h3>
           </Row>
@@ -73,7 +72,7 @@ const AboutPage: React.FC<AboutPageProps> = ({
                 {" "}
                 <FontAwesomeIcon className="" icon={faEnvelope} size="4x" />
               </a>
-              <h3 className="lead text-center py-2">Email Address</h3>
+              <h3 className="lead text-center py-1">Email Address</h3>
             </Col>
             <Col className="text-center">
               <a
@@ -83,7 +82,7 @@ const AboutPage: React.FC<AboutPageProps> = ({
                 {" "}
                 <FontAwesomeIcon className="" icon={faFilePdf} size="4x" />
               </a>
-              <h3 className="lead font-weight-light py-2">Resume</h3>
+              <h3 className="lead font-weight-light py-1">Resume</h3>
             </Col>
             <Col className="text-center">
               <a
@@ -97,7 +96,7 @@ const AboutPage: React.FC<AboutPageProps> = ({
                   size="4x"
                 />
               </a>
-              <h3 className="lead py-2">
+              <h3 className="lead py-1">
                 Safe Kids Foundation Internship Letter
               </h3>
             </Col>
@@ -113,7 +112,7 @@ const AboutPage: React.FC<AboutPageProps> = ({
                   size="4x"
                 />
               </a>
-              <h3 className="lead py-2">Valency Networks Internship Letter</h3>
+              <h3 className="lead py-1">Valency Networks Internship Letter</h3>
             </Col>
           </Row>
           {/* <hr />
@@ -125,7 +124,6 @@ const AboutPage: React.FC<AboutPageProps> = ({
           </Row> */}
         </Container>
       </Jumbotron>
-      {/* <SkillSetComponent /> */}
     </div>
   );
 };
