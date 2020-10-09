@@ -82,7 +82,7 @@ export class CarouselComponent extends Component<{}, any> {
 
   makeItems = (items: any) => {
     // console.log(items)
-    return items.map((item: any) => {
+    return items.map((item: any, key:any) => {
       console.log(item);
       return (
         <Card

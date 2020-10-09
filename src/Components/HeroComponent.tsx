@@ -15,7 +15,7 @@ function HeroComponent(props: any) {
         <Row className="justify-content-center text-center">
           <Col md={7} sm={12}>
             {props.title && (
-              <h1 className="display-3 projects-header font-weight-bolder">
+              <h1 className="display-3 name-header font-weight-bolder">
                 {props.title}
               </h1>
             )}

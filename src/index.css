@@ -69,6 +69,26 @@ a:hover {
   margin: auto;
 }
 
+.name-header{
+  background: linear-gradient(
+    to right,
+    indigo,
+    rgb(130, 191, 231),
+    rgb(75, 17, 233)
+  );
+  background-size: 200% 200%;
+  animation: rainbow 2s ease-in-out infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 1);
+  display: block;
+  transition: color 0.2s ease-in-out;
+  /* text-transform: uppercase; */
+}
+.name-header:hover {
+  color: rgba(0, 0, 0, 0);
+  cursor: auto;
+}
 .projects-header {
   background: linear-gradient(
     to right,

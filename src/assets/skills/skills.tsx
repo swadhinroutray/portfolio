@@ -1,6 +1,6 @@
 
 import AWS from './AWS.svg';
-import Cpp from './C++.svg';
+import Cpp from './Cpp.svg';
 import CSS from './CSS.svg';
 import DO from './DO.svg';
 import Docker from './Docker.svg'
