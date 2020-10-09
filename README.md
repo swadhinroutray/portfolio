@@ -6,4 +6,4 @@
 - Created a CI pipeline for testing and automating deployments using CircleCI
 - Used AWS SES for a small script mailer 
 
-#### View the website at [swadhinroutray.com](swadhinroutray.com)
+#### View the website at [swadhinroutray.com](https://swadhinroutray.com)
