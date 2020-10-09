@@ -86,6 +86,7 @@ export class CarouselComponent extends Component<{}, any> {
       console.log(item);
       return (
         <Card
+          key ={item.id}
           item={item}
           click={(e: any) => this.handleCardClick(item.id, e)}
         />
