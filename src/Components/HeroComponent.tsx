@@ -26,6 +26,7 @@ function HeroComponent(props: any) {
         </Row>
         <br/>
         <br/>
+
         <Row className="justify-content-center text-center">
           <Col md={7} sm={12}>
             <h3 className="display-4 projects-header justify-content-center font-weight-bold">
@@ -38,7 +39,7 @@ function HeroComponent(props: any) {
         </Row>
         <br/>
         <br />
-
+        <br/>
         <Row className="justify-content-center text-center py-1">
           {props.text && (
             <h2 className="display-4 projects-header font-weight-bold">
