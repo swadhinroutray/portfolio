@@ -116,13 +116,13 @@ const AboutPage: React.FC<AboutPageProps> = ({
               <h3 className="lead py-2">Valency Networks Internship Letter</h3>
             </Col>
           </Row>
-          <hr />
+          {/* <hr />
           <Row className="justify-content-center text-center py-1">
           <h3 className="display-4 projects-header font-weight-medium py-3">
               My Tech Skill Set
             </h3>
             <SkillSetComponent />
-          </Row>
+          </Row> */}
         </Container>
       </Jumbotron>
       {/* <SkillSetComponent /> */}

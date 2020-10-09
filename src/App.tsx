@@ -10,6 +10,7 @@ import { NavbarComponent } from "./Components/index";
 import HomePage from "./Pages/HomePage";
 import AboutPage from "./Pages/AboutPage";
 import ContactPage from "./Pages/ContactPage";
+import SkillsPage from "./Pages/SkillsPage";
 export class App extends Component<{}, any> {
   constructor(props: any) {
     super(props);
@@ -79,7 +80,12 @@ export class App extends Component<{}, any> {
             exact
             render={() => <ContactPage title={this.state.contact.title} />}
           />
-          {/* <FooterComponent /> */}
+          <Route
+            path="/skills"
+            exact
+            render={() => <SkillsPage  />}
+          />
+          
         </Container>
       </Router>
     );

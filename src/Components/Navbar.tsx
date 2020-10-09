@@ -21,6 +21,9 @@ export class NavbarComponent extends Component {
             <Link className="nav-link lead" to="/about">
               About
             </Link>
+            <Link className="nav-link lead" to="/skills">
+              Skills
+            </Link>
             <Link className="nav-link lead" to="/contact">
               Contact
             </Link>
