@@ -77,7 +77,7 @@ const AboutPage: React.FC<AboutPageProps> = ({
             <Col className="text-center">
               <a
                 className="px-2"
-                href="https://drive.google.com/file/d/1kJTTTTAORMynCPuMxqZdX2-qsRtA7pWf/view"
+                href="https://drive.google.com/file/d/1whsNgYw3VvYBNzJX5z4O8gTyxgiSSIcl/view?usp=sharing"
               >
                 {" "}
                 <FontAwesomeIcon className="" icon={faFilePdf} size="4x" />
