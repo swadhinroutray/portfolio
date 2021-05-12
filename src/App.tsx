@@ -33,11 +33,11 @@ export class App extends Component<{}, any> {
           "I have worked with core technologies including C++, Java, Python, Golang and JavaScript. ",
           "Worked on comprehensive server-side projects as well as orchestrated them in containers with Docker. ",
           "Worked with cloud service providers such as AWS and IBM Cloud whilst using various services such as AWS SES, DynamoDB, CloudantDB and EC2 instances. ",
-          "My tech interests lie in cloud computation and networking along with information security. ",
+          "My tech interests lie in cloud computation and networking along with information security.",
           "Currently venturing into serverless programming with AWS Lambda and IBM Cloud functions. ",
           
         ],
-        researchInterests:"My research interests lie in the fields of Cloud Networking, Information Security and Operating Systems!",
+        researchInterests:"My research interests lie in the fields of Cloud Networking, Information Security and Blockchain oriented DApps!",
         bio:
           "Software Developer, Technophile and an overenthusiastic sports fan. I like to work on creative and exciting projects which help me learn more about existing tech and help me venture into newer ones too!",
       },

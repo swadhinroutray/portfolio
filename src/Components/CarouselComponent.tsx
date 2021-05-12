@@ -24,7 +24,7 @@ export class CarouselComponent extends Component<{}, any> {
           subTitle:
             "The Signature Online Cryptic Scanvenger Hunt of Prometheus",
           imgSrc: Hawkeye,
-          link: "https://hawkeye.iecsemanipal.com",
+          link: "https://github.com/swadhinroutray/hawkeye-2020",
           selected: false,
         },
         {
@@ -41,7 +41,7 @@ export class CarouselComponent extends Component<{}, any> {
           title: "COVID-19 Tracker",
           subTitle: "A website for real-time COVID-19 tracking",
           imgSrc: Covid,
-          link: "https://www.covid-19-tracker.in/",
+          link: "https://covid.swadhinroutray.com",
           selected: false,
         },
         {

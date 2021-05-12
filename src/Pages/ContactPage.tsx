@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Ref } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Jumbotron from "react-bootstrap/Jumbotron";
@@ -37,7 +37,7 @@ export class ContactPage extends Component<ContactPageProps, any> {
     });
     try {
       const result = await Axios.post("/api/email", this.state);
-      console.log(result)
+      console.log(result);
       if (result.data.success) {
         this.setState({
           disabled: false,
@@ -53,7 +53,7 @@ export class ContactPage extends Component<ContactPageProps, any> {
         });
       }
     } catch (error) {
-        console.log(error)
+      console.log(error);
       this.setState({
         disabled: false,
         emailSent: false,
@@ -62,6 +62,7 @@ export class ContactPage extends Component<ContactPageProps, any> {
   };
 
   render() {
+    const recaptchaRef: any = React.createRef();
     return (
       <div>
         <Jumbotron className="bg-transparent jumbotron-fluid p-0">
@@ -81,9 +82,11 @@ export class ContactPage extends Component<ContactPageProps, any> {
             className=" form-wrapper text-center"
           >
             <Form.Group>
-              <Form.Label className ='form-info' htmlFor="full-name">Full Name</Form.Label>
+              <Form.Label className="form-info" htmlFor="full-name">
+                Full Name
+              </Form.Label>
               <Form.Control
-              className='input-text'
+                className="input-text"
                 id="full-name"
                 name="name"
                 type="text"
@@ -92,9 +95,11 @@ export class ContactPage extends Component<ContactPageProps, any> {
               />
             </Form.Group>
             <Form.Group>
-              <Form.Label className ='form-info' htmlFor="email">Email</Form.Label>
+              <Form.Label className="form-info" htmlFor="email">
+                Email
+              </Form.Label>
               <Form.Control
-              className='input-text'
+                className="input-text"
                 id="email"
                 name="email"
                 type="email"
@@ -103,9 +108,11 @@ export class ContactPage extends Component<ContactPageProps, any> {
               />
             </Form.Group>
             <Form.Group>
-              <Form.Label className ='form-info 'htmlFor="message">Message</Form.Label>
+              <Form.Label className="form-info " htmlFor="message">
+                Message
+              </Form.Label>
               <Form.Control
-              className='input-text'
+                className="input-text"
                 id="message"
                 name="message"
                 as="textarea"
@@ -114,11 +121,11 @@ export class ContactPage extends Component<ContactPageProps, any> {
                 onChange={this.handleChange}
               />
             </Form.Group>
-            <Button 
+            <Button
               className="d-inline-block "
               variant="primary"
               type="submit"
-              size='lg'
+              size="lg"
               disabled={this.state.disabled}
             >
               Send

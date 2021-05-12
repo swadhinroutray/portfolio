@@ -29,7 +29,7 @@ app.post('/api/email', async (req,res)=>{
     // console.log(req.body)
     const message ={
         from: 'swadhin.routray@gmail.com',
-        to: 'swadhin.routray@gmail.com',
+        to: 'routrayswadhin10@gmail.com',
         subject: "Portfolio Message from: "+ req.body.name,
         text: req.body.message + '\n From: '+ req.body.email
     };

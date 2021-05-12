@@ -114,6 +114,34 @@ const AboutPage: React.FC<AboutPageProps> = ({
               </a>
               <h3 className="lead py-1">Valency Networks Internship Letter</h3>
             </Col>
+            <Col className="text-center">
+              <a
+                className="px-2"
+                href="https://drive.google.com/file/d/1tLlXbThpIv2VkZvbSTQJPhpPTbwwnAfk/view?usp=sharing"
+              >
+                {" "}
+                <FontAwesomeIcon
+                  className=""
+                  icon={faEnvelopeOpenText}
+                  size="4x"
+                />
+              </a>
+              <h3 className="lead py-1">TGH Tech: Internship Completion Letter</h3>
+            </Col>
+            <Col className="text-center">
+              <a
+                className="px-2"
+                href="https://drive.google.com/file/d/1ukUXTVFzcqJ26r2lpmIPXdag9tjx5f_t/view?usp=sharing"
+              >
+                {" "}
+                <FontAwesomeIcon
+                  className=""
+                  icon={faEnvelopeOpenText}
+                  size="4x"
+                />
+              </a>
+              <h3 className="lead py-1">TGH Tech: Letter Of Recommendation</h3>
+            </Col>
           </Row>
           {/* <hr />
           <Row className="justify-content-center text-center py-1">
